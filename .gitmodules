@@ -7,3 +7,6 @@
 [submodule "bundle/vimtemplate.vim"]
 	path = bundle/vimtemplate.vim
 	url = https://github.com/tyru/vimtemplate.vim.git
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = https://github.com/chrismetcalf/vim-yankring.git
