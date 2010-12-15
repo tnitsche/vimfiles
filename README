@@ -13,3 +13,11 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
 See http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 for details
+
+If you get errors while pushing, check your .git/config. Remote origin has to be
+
+   [remote "origin"]
+   fetch = +refs/heads/*:refs/remotes/origin/*
+   url = git@github.com:tnitsche/vimfiles.git
+
+
