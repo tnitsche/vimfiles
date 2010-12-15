@@ -34,3 +34,6 @@
 [submodule "bundle/rvm"]
 	path = bundle/rvm
 	url = https://github.com/csexton/rvm.vim.git
+[submodule "bundle/tailminusf"]
+	path = bundle/tailminusf
+	url = https://github.com/vim-scripts/TailMinusF.git
