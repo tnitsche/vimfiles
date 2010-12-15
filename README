@@ -28,7 +28,7 @@ VIM plugin notes
 
     ctags --exclude=.git                         \
       --exclude=log                              \
-      --exclude=app/views                        \  
+      --exclude=app/views                        \
       --exclude=public/export                    \
       --exclude=public/export.dev                \
       --exclude=public/javascripts               \
