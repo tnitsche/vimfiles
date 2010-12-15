@@ -24,7 +24,19 @@ VIM plugin notes
 
    taglist: do something like 
 
-   ctags --exclude=.git --exclude=log --exclude=app/views --exclude=public/export --exclude=public/export.dev --exclude=public/javascripts --exclude=public/javascripts_pm --exclude=public/stylesheets --exclude=vendor/plugins/polonium --exclude=vendor/plugins/asset_packager --exclude=public/position_pages --exclude=db/enumerations/common -R .
+   ctags --exclude=.git                         \
+     --exclude=log                              \
+     --exclude=app/views                        \  
+     --exclude=public/export                    \
+     --exclude=public/export.dev                \
+     --exclude=public/javascripts               \
+     --exclude=public/javascripts_pm            \
+     --exclude=public/stylesheets               \
+     --exclude=vendor/plugins/polonium          \
+     --exclude=vendor/plugins/asset_packager    \
+     --exclude=public/position_pages            \
+     --exclude=db/enumerations/common           \
+     -R .
    
    to build a valid taglist for your Rails project (your exclude list may vary).
 
