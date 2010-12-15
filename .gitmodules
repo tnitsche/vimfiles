@@ -25,3 +25,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "bundle/lusty-juggler"]
+	path = bundle/lusty-juggler
+	url = https://github.com/sjbach/lusty.git
