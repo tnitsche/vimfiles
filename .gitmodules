@@ -28,3 +28,6 @@
 [submodule "bundle/lusty-juggler"]
 	path = bundle/lusty-juggler
 	url = https://github.com/sjbach/lusty.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
