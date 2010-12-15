@@ -68,3 +68,7 @@ command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 
 let g:yankring_history_file = '.vim/tmp/yankring_history.txt'
 let g:dbext_default_history_file = '.vim/tmp/dbext_sql_history.txt'
+
+let g:dbext_default_profile_DEFAULT_PG = 'type=PGSQL:user=pjpp:passwd=@askg:dbname=pjpp_dev'
+let g:dbext_default_profile_CUSTOM_PG  = 'type=PGSQL:port=5843:user=pjpp:passwd=@askg:dbname=pjpp_dev'
+let g:dbext_default_profile    = 'DEFAULT_PG'
