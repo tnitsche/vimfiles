@@ -22,21 +22,30 @@ If you get errors while pushing, check your .git/config. Remote origin has to be
 
 VIM plugin notes
 
-   taglist: do something like 
+  * taglist: 
+  
+    do something like 
 
-   ctags --exclude=.git                         \
-     --exclude=log                              \
-     --exclude=app/views                        \  
-     --exclude=public/export                    \
-     --exclude=public/export.dev                \
-     --exclude=public/javascripts               \
-     --exclude=public/javascripts_pm            \
-     --exclude=public/stylesheets               \
-     --exclude=vendor/plugins/polonium          \
-     --exclude=vendor/plugins/asset_packager    \
-     --exclude=public/position_pages            \
-     --exclude=db/enumerations/common           \
-     -R .
-   
-   to build a valid taglist for your Rails project (your exclude list may vary).
+    ctags --exclude=.git                         \
+      --exclude=log                              \
+      --exclude=app/views                        \  
+      --exclude=public/export                    \
+      --exclude=public/export.dev                \
+      --exclude=public/javascripts               \
+      --exclude=public/javascripts_pm            \
+      --exclude=public/stylesheets               \
+      --exclude=vendor/plugins/polonium          \
+      --exclude=vendor/plugins/asset_packager    \
+      --exclude=public/position_pages            \
+      --exclude=db/enumerations/common           \
+      -R .
+    
+    to build a valid taglist for your Rails project (your exclude list may vary).
 
+  * command-t:
+
+    read :he command-t install notes and requirements (ruby, rake etc.). After cloning
+    you have to do
+
+    cd ~/.vim/bundle/command-t && rake make
+    
