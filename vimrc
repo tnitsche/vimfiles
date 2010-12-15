@@ -12,7 +12,7 @@ set sts=2
 set showmatch
 set ruler
 set laststatus=2
-set statusline=%<%F%h%m%r%h%w%y\ [%{&ff}]\ [%{&encoding}]\ [git:\ %{fugitive#statusline()}]\ [%{strftime(\"%d/%m/%y\ -\ %H:%M\",getftime(expand(\"%:p\")))}]%=\ [lin:%l\,%L]\ [col:%c%V]\ [pos:%o]\ [ascii:%b]\ %P
+set statusline=%<%F%h%m%r%h%w%y\ [%{&ff}]\ [%{&encoding}]\ %{fugitive#statusline()}\ %{rvm#statusline()}\ [%{strftime(\"%d/%m/%y\ -\ %H:%M\",getftime(expand(\"%:p\")))}]%=\ [lin:%l\,%L]\ [col:%c%V]\ [pos:%o]\ [ascii:%b]\ %P
 set pastetoggle=<F11>
 
 set hidden
