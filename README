@@ -2,9 +2,10 @@ Installation:
 
     git clone git://github.com/tnitsche/vimfiles.git ~/.vim
 
-Create symlinks:
+Create symlinks/files:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+    cd .vim/
+    rake install
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
