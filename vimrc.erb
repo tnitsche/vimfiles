@@ -12,7 +12,7 @@ set sts=2
 set showmatch
 set ruler
 set laststatus=2
-set statusline=%<%F%h%m%r%h%w%y\ [%{&ff}]\ [%{&encoding}]\ %{fugitive#statusline()}\ %{rvm#statusline()}\ [%{strftime(\"%d/%m/%y\ -\ %H:%M\",getftime(expand(\"%:p\")))}]%=\ [lin:%l\,%L]\ [col:%c%V]\ [pos:%o]\ [ascii:%b]\ %P
+<%= 'set statusline=%<%F%h%m%r%h%w%y\ [%{&ff}]\ [%{&encoding}]\ %{fugitive#statusline()}\ %{rvm#statusline()}\ [%{strftime(\"%d/%m/%y\ -\ %H:%M\",getftime(expand(\"%:p\")))}]%=\ [lin:%l\,%L]\ [col:%c%V]\ [pos:%o]\ [ascii:%b]\ %P' %>
 set pastetoggle=<F11>
 
 set hidden
@@ -47,8 +47,8 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails_proactive = 1
 " -- begin template config --
 let g:vt_template_dir_path = expand("$HOME/.vim/template") 
 let g:vt_command = "" 
-let g:vt_author = "Thomas Nitsche" 
-let g:vt_email = "thomas.nitsche@gmail.com" 
+let g:vt_author = "<%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>" 
+let g:vt_email = "<%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>" 
 
 let s:files_tmp = { 
    \'skel.html'     : "html", 
@@ -59,7 +59,7 @@ let g:vt_filetype_files = join(map(keys(s:files_tmp), 'v:val . "=" . s:files_tmp
 unlet s:files_tmp 
 " -- end template config --
 
-imap <F12> <%= %>
+imap <F12> <%= '<%= %%>' %>
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
