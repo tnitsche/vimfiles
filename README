@@ -6,10 +6,6 @@ Create symlinks/files:
 
     cd .vim/
     rake install
-
-Switch to the `~/.vim` directory, and fetch submodules:
-
-    cd ~/.vim
     git submodule update --init
 
 See http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
