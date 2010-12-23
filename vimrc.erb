@@ -29,10 +29,12 @@ set shortmess=atI
 
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 map <leader>e :e! ~/.vimrc<cr>
-"Quickly open a buffer for scripbble
+"Quickly open a buffer for scribble
 map <leader>q :e ~/.vim/tmp/buffer<cr>
 map <leader>h <C-]>
 nnoremap <silent> <leader>p :YRShow<CR>
+"Paste from X clipboard
+map <leader>x :r!xsel<CR>
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
