@@ -1,21 +1,28 @@
 Installation:
 
-    git clone git://github.com/tnitsche/vimfiles.git ~/.vim
+  git clone git://github.com/tnitsche/vimfiles.git ~/.vim
 
 Create symlinks/files:
 
-    cd .vim/
-    rake install
-    git submodule update --init
+  cd .vim/
+  rake install
+  git submodule update --init
 
 See http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 for details
 
 If you get errors while pushing, check your .git/config. Remote origin has to be
 
-   [remote "origin"]
-   fetch = +refs/heads/*:refs/remotes/origin/*
-   url = git@github.com:tnitsche/vimfiles.git
+  [remote "origin"]
+  fetch = +refs/heads/*:refs/remotes/origin/*
+  url = git@github.com:tnitsche/vimfiles.git
+
+Adding new plugins:
+
+  cd ~/.vim
+  git submodule add https://github.com/vim-scripts/openssl.vim.git bundle/openssl
+  git add .
+  git commit -m "Install openssl.vim bundle as a submodule."
 
 VIM plugin notes
 
@@ -46,3 +53,4 @@ VIM plugin notes
 
     cd ~/.vim/bundle/command-t && rake make
     
+
