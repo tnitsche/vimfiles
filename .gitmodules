@@ -58,3 +58,6 @@
 [submodule "bundle/sql-utilities"]
 	path = bundle/sql-utilities
 	url = https://github.com/vim-scripts/SQLUtilities.git
+[submodule "bundle/screen"]
+	path = bundle/screen
+	url = https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
