@@ -46,9 +46,6 @@
 [submodule "bundle/openssl"]
 	path = bundle/openssl
 	url = https://github.com/vim-scripts/openssl.vim.git
-[submodule "syntastic"]
-	path = syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -60,4 +57,4 @@
 	url = https://github.com/vim-scripts/SQLUtilities.git
 [submodule "bundle/screen"]
 	path = bundle/screen
-	url = https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
+	url = https://github.com/ervandew/screen.git
